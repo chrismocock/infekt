@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "Infekt",
+    "slug": "infekt",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.infekt.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Infekt needs access to your camera to scan QR codes for tagging.",
+        "NSLocationWhenInUseUsageDescription": "Infekt needs your location to enable GPS proximity tagging and show your position on the map.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Infekt needs your location to enable GPS proximity tagging and show your position on the map."
+      }
+    },
+    "android": {
+      "package": "com.infekt.app",
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Infekt to access your camera to scan QR codes."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Infekt to use your location for GPS proximity tagging."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#ffffff",
+          "sounds": []
+        }
+      ]
+    ],
+    "scheme": "infekt",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "02016f84-0f50-4edb-9bd5-71fa5dda1353"
+      }
+    }
+  }
+}

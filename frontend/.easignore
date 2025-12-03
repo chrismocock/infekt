@@ -1,0 +1,65 @@
+# Dependencies
+node_modules/
+
+# Expo cache and build artifacts
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# Logs and temporary files
+npm-debug.*
+*.log
+*.tsbuildinfo
+
+# Environment files (should use EAS secrets instead)
+.env
+.env*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+*.pem
+
+# Documentation (not needed for build)
+*.md
+!README.md
+
+# Test files
+**/__tests__/
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+
+# Debug files
+DEBUGGING.md
+FIX_*.md
+HOW_TO_*.md
+INSTALL_*.md
+NETWORK_*.md
+START_*.md
+UPGRADE_*.md
+VIEW_*.md
+WEB_TESTING.md
+ASSETS.md
+
+# Web stubs (platform-specific)
+web-stubs/
+
