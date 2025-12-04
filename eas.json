@@ -1,0 +1,38 @@
+{
+  "cli": {
+    "appDir": "frontend"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "workflow": "managed"
+      },
+      "ios": {
+        "workflow": "managed"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "workflow": "managed"
+      },
+      "ios": {
+        "workflow": "managed"
+      }
+    },
+    "production": {
+      "distribution": "store",
+      "android": {
+        "workflow": "managed"
+      },
+      "ios": {
+        "workflow": "managed"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
